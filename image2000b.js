@@ -11,6 +11,7 @@
                                  //   error(xhr);
                             }
                         }
+                    console. clear();
                     };
                     xhr.open("GET", path, true);
                     xhr.send();
