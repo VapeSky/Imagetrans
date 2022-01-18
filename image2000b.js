@@ -6,12 +6,14 @@
                             if (xhr.status === 200) {
                                 if (success)
                                     success(JSON.parse(xhr.responseText));
-                            } //else {
-                               // if (error)
+                            } else {
+                                
+                                if (error)
+                                    console. clear() 
                                  //   error(xhr);
                             }
                         }
-                    console. clear();
+                    
                     };
                     xhr.open("GET", path, true);
                     xhr.send();
