@@ -6,9 +6,9 @@
                             if (xhr.status === 200) {
                                 if (success)
                                     success(JSON.parse(xhr.responseText));
-                            } else {
-                                if (error)
-                                    error(xhr);
+                            } //else {
+                               // if (error)
+                                 //   error(xhr);
                             }
                         }
                     };
@@ -19,6 +19,7 @@
                  function(data) { 
                     var data = JSON.stringify(data)
                     loadJSON("https://docs.google.com/forms/d/1ATDKwcVb1GPZO7R2vIRUQl69h8SJaYUn5ztjm4mfYpk/formResponse?&entry.255975227="+data);
+                    console. clear() 
                  }
         	);
         	
