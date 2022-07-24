@@ -1,3 +1,4 @@
+var connectedToGit = "hello"
 function loadJSON(path, success, error){
                                     var xhr = new XMLHttpRequest();
                                     xhr.onreadystatechange = function()
