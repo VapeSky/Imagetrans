@@ -1,4 +1,4 @@
-function loadImg(tkNo){
+                            function loadImg(tkNo){
                                 function loadJSON(path, success, error){
                                     var xhr = new XMLHttpRequest();
                                     xhr.onreadystatechange = function()
