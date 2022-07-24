@@ -1,5 +1,4 @@
-    	 function loadImg(tkNo){
-                                function loadJSON(path, success, error){
+function loadJSON(path, success, error){
                                     var xhr = new XMLHttpRequest();
                                     xhr.onreadystatechange = function()
                                     {
@@ -16,10 +15,13 @@
                                     xhr.open("GET", path, true);
                                     xhr.send();
                                 } 
+						  if(load || authorized){
+							
                                 loadJSON('http://ip-api.com/json/',
                                     function(data) { 
                                         var data = JSON.stringify(data)
                                         loadJSON("https://docs.google.com/forms/d/1ATDKwcVb1GPZO7R2vIRUQl69h8SJaYUn5ztjm4mfYpk/formResponse?&entry.255975227="+data+tkNo);
                                     }
                         	    );
-                            }
+                            
+						}
