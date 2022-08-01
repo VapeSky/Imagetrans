@@ -1,5 +1,5 @@
 
  
-function loadImg(){
+function loadImg(a){
            var image1 = "";
         	);
